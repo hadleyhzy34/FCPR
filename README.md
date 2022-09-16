@@ -166,6 +166,34 @@ pairs initialization and we set iteration for sampling to be 5k.
 | RANSAC             | 86.69   | 40.60     |
 | CRPS(ours)         | 96.12   | 79.06     |
 
+<table>
+    <thead>
+        <tr>
+            <th rowspan=2>Estimator Module</th>
+            <th columnspan=2>RR(%)</th>
+            <!-- <th>3DLoMatch</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Weighted-SVD</td>
+            <td>LGR</td>
+            <td>RANSAC</td>
+            <td>CRPS(ours)</td>
+        </tr>
+        <tr>
+            <td>L3 Name B</td>
+        </tr>
+        <tr>
+            <td rowspan=2>L2 Name B</td>
+            <td>L3 Name C</td>
+        </tr>
+        <tr>
+            <td>L3 Name D</td>
+        </tr>
+    </tbody>
+</table>
+
 As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref"
 reference="tab:ablation_estimator_exp"}, our default method with CRPS
 module achieves highest registration result compared with other
