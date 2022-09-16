@@ -177,16 +177,18 @@ pairs initialization and we set iteration for sampling to be 5k.
     <tbody>
         <tr>
             <td>Weighted-SVD</td>
+            <td>81.45</td>
+            <td>32.57</td>
+        </tr>
+        <tr>
             <td>LGR</td>
+            <td>95.75</td>
+            <td>76.98</td>
+        </tr>
+        <tr>
             <td>RANSAC</td>
-            <td>CRPS(ours)</td>
-        </tr>
-        <tr>
-            <td>L3 Name B</td>
-        </tr>
-        <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
+            <td>86.69</td>
+            <td>40.60</td>
         </tr>
         <tr>
             <td>L3 Name D</td>
