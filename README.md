@@ -203,6 +203,6 @@ initialization module might need to be adjusted according to the
 corresponding feature descriptor in order to maximize registration
 performance. Any new feature descriptor may require additional work to
 fine-tune the feature matching matrix to obtain higher inlier-ratio of
-matches with top-k (${k=N_c}$) highest scores from feature matching
+matches with top-k ${k=N_c}$ highest scores from feature matching
 matrix. In the future, we will also work on designing triplet pairs
 initialization module that relies less on feature descriptor design.
