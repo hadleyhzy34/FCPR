@@ -16,8 +16,6 @@ bibliography:
 
 # Related Work {#Related Work}
 
-\section{Related Work}
-
 ## Traditional Registration Methods
 
 As classical registration method, ICP [@besl1992method] iteratively
