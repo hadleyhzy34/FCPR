@@ -158,7 +158,7 @@ pairs initialization and we set iteration for sampling to be 5k.
 :::
 :::
 
-| Estimator   Module | RR(%)   |           |
+| Estimator   Module | RR(%)               |
 |--------------------|---------|-----------|
 |                    | 3DMatch | 3DLoMatch |
 | Weighted-SVD       | 81.45   | 32.57     |
