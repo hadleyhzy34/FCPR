@@ -221,3 +221,9 @@ fine-tune the feature matching matrix to obtain higher inlier-ratio of
 matches with top-k ${k=N_c}$ highest scores from feature matching
 matrix. In the future, we will also work on designing triplet pairs
 initialization module that relies less on feature descriptor design.
+
+[<sup>1</sup>](#refer-anchor-1)
+
+<div id="refer-anchor-1"></div>
+
+- [1] [P. J. Besl and N. D. McKay, "A method for registration of 3-D shapes," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 14, no. 2, pp. 239-256, Feb. 1992, doi: 10.1109/34.121791.](https://ieeexplore.ieee.org/document/121791)
