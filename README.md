@@ -199,9 +199,46 @@ pairs initialization and we set iteration for sampling to be 5k.
             <td>40.60</td>
         </tr>
         <tr>
-            <td>L3 Name D</td>
+            <td>CRPS(ours)</td>
+            <td>96.12</td>
+            <td>79.06</td>
         </tr>
     </tbody>
+</table>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" rowspan="2">Estimator   Module</th>
+    <th class="tg-c3ow" colspan="2">RR(%)</th>
+  </tr>
+  <tr>
+    <th class="tg-0pky">3DMatch</th>
+    <th class="tg-0pky">3DLoMatch</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Weighted-SVD</td>
+    <td class="tg-0pky">81.45</td>
+    <td class="tg-0pky">32.57</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">LGR</td>
+    <td class="tg-0pky">95.75</td>
+    <td class="tg-0pky">76.98</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">RANSAC</td>
+    <td class="tg-0pky">86.69</td>
+    <td class="tg-0pky">40.60</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">CRPS(ours)</td>
+    <td class="tg-0pky">96.12</td>
+    <td class="tg-0pky">79.06</td>
+  </tr>
+</tbody>
 </table>
 
 As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref"
