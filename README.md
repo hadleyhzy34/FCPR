@@ -133,6 +133,21 @@ it drops from 87.3% to 78.2%. This supports our proposal that our
 triangle compatibility could provide good choices on two other point
 pairs to form inlier triplet pairs.
 
+
+
+
+<div align=center>
+<img src="https://github.com/hadleyhzy34/FCPR/blob/main/3dm_ir.png" width="360" height="270">   <img src="https://github.com/hadleyhzy34/FCPR/blob/main/3dlm_ir.png" width="360" height="270">
+</div>
+<div align=center>
+(a) Inlier Ratio on 3DMatch                                           (b) Inlier Ratio on 3DLoMatch
+</div>
+Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplet pairs on both 3DMatch\&3DLoMatch benchmarks. We name inlier ratio of triplet pairs as percentage of triplet pairs that all their three pairs are inlier point pairs.
+
+
+
+
+
 ## 5. Ablation Study: CRPS Module. {#crps_module}
 
 As the last step to refine correspondences and select pose, we enforce
