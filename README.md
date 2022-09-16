@@ -78,11 +78,11 @@ hardware: CPU Intel i7-12700 and single GPU Nvidia RTX3090.
 
 For 3DMatch&3DLoMatch benchmarks, at the first stage of triplet pairs
 initialization module, we select 10240 number of entries
-(${N_c = 10240}$) as number of candidate pairs and further filter via
-spatial consistency to choose 512 number of pairs (${N_g = 512}$).
-During flood fill process, we iterate for 120 (${\lambda_f = 120}$)
+${N_c = 10240}$ as number of candidate pairs and further filter via
+spatial consistency to choose 512 number of pairs ${N_g = 512}$.
+During flood fill process, we iterate for 120 ${\lambda_f = 120}$
 number of times. We choose neighborhood size to 9 and top 1
-(${N_k = 1}$) corresponding pair will be added to each group of pairs.
+${N_k = 1}$ corresponding pair will be added to each group of pairs.
 Number of iterations ${\lambda_c}$ is set to 5. Both triangle inlier
 threshold ${\sigma_d}$ and inlier threshold ${\tau_s}$ are set to 0.1m.
 NMS distance threshold is set to 5cm and length threshold ${\sigma_l}$
