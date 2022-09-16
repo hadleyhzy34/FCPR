@@ -143,69 +143,6 @@ RANSAC [@fischler1981random] as comparison. RANSAC is evaluated by point
 correspondences ${\textbf{p}_f}$ obtained during first stage of triplet
 pairs initialization and we set iteration for sampling to be 5k.
 
-::: center
-::: {#tab:ablation_estimator_exp}
-  ---------------------------------- --------------------- ---------------------
-  Estimator Module                   RR(%)                 
-                                     3DMatch               3DLoMatch
-  Weighted-SVD [@umeyama1991least]   81.45                 32.57
-  LGR [@yu2021cofinet]               [95.75]{.underline}   [76.98]{.underline}
-  RANSAC [@fischler1981random]       86.69                 40.60
-  CRPS (Ours)                        **96.12**             **79.06**
-  ---------------------------------- --------------------- ---------------------
-
-  : Evaluation Results of ablation study on Pose Estimation Strategy.
-:::
-:::
-
-| Estimator   Module | RR(%)              ||
-|--------------------|---------|-----------|
-|                    | 3DMatch | 3DLoMatch |
-| Weighted-SVD       | 81.45   | 32.57     |
-| LGR                | 95.75   | 76.98     |
-| RANSAC             | 86.69   | 40.60     |
-| CRPS(ours)         | 96.12   | 79.06     |
-
-<table>
-    <!-- <thead>
-        <tr>
-            <th rowspan=2>Estimator Module</th>
-            <th columnspan=2>RR(%)</th>
-            <th>3DLoMatch</th> -->
-        <!-- </tr> -->
-    <!-- </thead> --> -->
-    <tbody>
-        <tr>
-            <td rowspan=2> Estimator Module</td>
-            <td columnspan=2>RR(%)</th>
-        </tr>
-        <tr>
-            <td>3DMatch</td>
-            <td>3DLoMatch</td>
-        </tr>
-        <tr>
-            <td>Weighted-SVD</td>
-            <td>81.45</td>
-            <td>32.57</td>
-        </tr>
-        <tr>
-            <td>LGR</td>
-            <td>95.75</td>
-            <td>76.98</td>
-        </tr>
-        <tr>
-            <td>RANSAC</td>
-            <td>86.69</td>
-            <td>40.60</td>
-        </tr>
-        <tr>
-            <td>CRPS(ours)</td>
-            <td>96.12</td>
-            <td>79.06</td>
-        </tr>
-    </tbody>
-</table>
-
 <table class="tg">
 <thead>
   <tr>
