@@ -167,14 +167,17 @@ pairs initialization and we set iteration for sampling to be 5k.
 | CRPS(ours)         | 96.12   | 79.06     |
 
 <table>
-    <thead>
+    <!-- <thead>
         <tr>
             <th rowspan=2>Estimator Module</th>
             <th columnspan=2>RR(%)</th>
-            <!-- <th>3DLoMatch</th> -->
-        </tr>
-    </thead>
+            <th>3DLoMatch</th> -->
+        <!-- </tr> -->
+    <!-- </thead> --> -->
     <tbody>
+        <tr>
+            <td rowspan=2> Estimator Module</td>
+            <td columnspan=2>RR(%)</th>
         <tr>
             <td>Weighted-SVD</td>
             <td>81.45</td>
