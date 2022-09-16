@@ -179,6 +179,9 @@ pairs initialization and we set iteration for sampling to be 5k.
             <td rowspan=2> Estimator Module</td>
             <td columnspan=2>RR(%)</th>
         <tr>
+            <td>3DMatch</td>
+            <td>3DLoMatch</td>
+        <tr>
             <td>Weighted-SVD</td>
             <td>81.45</td>
             <td>32.57</td>
