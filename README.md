@@ -141,8 +141,9 @@ pairs to form inlier triplet pairs.
 </div>
 <div align=center>
 (a) Inlier Ratio on 3DMatch                                           (b) Inlier Ratio on 3DLoMatch
-Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplet pairs on both 3DMatch\&3DLoMatch benchmarks. We name inlier ratio of triplet pairs as percentage of triplet pairs that all their three pairs are inlier point pairs.
 </div>
+Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplet pairs on both 3DMatch\&3DLoMatch benchmarks. We name inlier ratio of triplet pairs as percentage of triplet pairs that all their three pairs are inlier point pairs.
+
 
 
 
