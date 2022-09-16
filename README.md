@@ -158,6 +158,14 @@ pairs initialization and we set iteration for sampling to be 5k.
 :::
 :::
 
+| Estimator   Module | RR(%)   |           |
+|--------------------|---------|-----------|
+|                    | 3DMatch | 3DLoMatch |
+| Weighted-SVD       | 81.45   | 32.57     |
+| LGR                | 95.75   | 76.98     |
+| RANSAC             | 86.69   | 40.60     |
+| CRPS(ours)         | 96.12   | 79.06     |
+
 As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref"
 reference="tab:ablation_estimator_exp"}, our default method with CRPS
 module achieves highest registration result compared with other
