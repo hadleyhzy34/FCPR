@@ -7,12 +7,7 @@ icra2023
 <!-- \label{Related Work} -->
  
 ### 1.1. Traditional Registration Methods
-As classical registration method, ICP \cite{besl1992method} iteratively updates transformation estimation by minimizing ${l_2}$ distance between registered source points given current estimation and the reference points. Variants of ICP algorithm \cite{chen1992object,trucco1999robust,chetverikov2005robust,yang2015go,koide2021voxelized} have been proposed to resist effect of outliers and speed up convergence. NDT \cite{biber2003normal} utilizes Netwon's algorithm to maximize registered points' summed probability on source points' probability density. RANSAC \cite{fischler1981random} follows a "generation and verification" scheme, where candidate correspondences are sampled and after a certain iterations, an alignment is produced based on maximum number of consensus. Many of its variants \cite{2005Matching,5459241,2018Graph} accelerate the process and improve its robustness. FGR \cite{zhou2016fast} and Teaser \cite{yang2020teaser} manage to register points by solving global optimization problem using Geman-McClure algorithm and truncated least square algorithm respectively while at higher computation cost. A more detailed review on traditional optimization based methods can be found in \cite{yang2019performance}.
-
----
-bibliography:
-- ref.bib
----
+As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iteratively updates transformation estimation by minimizing ${l_2}$ distance between registered source points given current estimation and the reference points. Variants of ICP algorithm \cite{chen1992object,trucco1999robust,chetverikov2005robust,yang2015go,koide2021voxelized} have been proposed to resist effect of outliers and speed up convergence. NDT \cite{biber2003normal} utilizes Netwon's algorithm to maximize registered points' summed probability on source points' probability density. RANSAC \cite{fischler1981random} follows a "generation and verification" scheme, where candidate correspondences are sampled and after a certain iterations, an alignment is produced based on maximum number of consensus. Many of its variants \cite{2005Matching,5459241,2018Graph} accelerate the process and improve its robustness. FGR \cite{zhou2016fast} and Teaser \cite{yang2020teaser} manage to register points by solving global optimization problem using Geman-McClure algorithm and truncated least square algorithm respectively while at higher computation cost. A more detailed review on traditional optimization based methods can be found in \cite{yang2019performance}.
 
 # APPENDIX
 
@@ -20,7 +15,7 @@ bibliography:
 
 ### 1.1. Traditional Registration Methods
 
-As classical registration method, ICP [@besl1992method] iteratively
+As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iteratively
 updates transformation estimation by minimizing ${l_2}$ distance between
 registered source points given current estimation and the reference
 points. Variants of ICP algorithm
@@ -222,7 +217,6 @@ matches with top-k ${k=N_c}$ highest scores from feature matching
 matrix. In the future, we will also work on designing triplet pairs
 initialization module that relies less on feature descriptor design.
 
-[<sup>1</sup>](#refer-anchor-1)
 
 <div id="refer-anchor-1"></div>
 
