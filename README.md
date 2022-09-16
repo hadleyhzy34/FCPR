@@ -18,7 +18,7 @@ bibliography:
 
 # Related Work {#Related Work}
 
-## Traditional Registration Methods
+## 1. Traditional Registration Methods
 
 As classical registration method, ICP [@besl1992method] iteratively
 updates transformation estimation by minimizing ${l_2}$ distance between
@@ -40,7 +40,7 @@ respectively while at higher computation cost. A more detailed review on
 traditional optimization based methods can be found in
 [@yang2019performance].
 
-# Evaluation Metrics {#Evaluation Metrics}
+# 2. Evaluation Metrics {#Evaluation Metrics}
 
 1.  **Relative Rotation and Translation Error**(RRE/RTE): the deviations
     from the ground-truth pose as:
@@ -71,7 +71,7 @@ traditional optimization based methods can be found in
 
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
 
-# Implementation Details {#Implementation Details}
+# 3. Implementation Details {#Implementation Details}
 
 We implement and evaluate our model with PyTorch [@paszke2019pytorch] on
 hardware: CPU Intel i7-12700 and single GPU Nvidia RTX3090.
@@ -104,7 +104,7 @@ with a voxel size of 2.5 cm on 3DMatch and 30 cm on KITTI. We keep using
 [@qin2022geometric]. Details of configuration and training parameters
 can be found [@qin2022geometric].
 
-# High Inlier Ratio on Triplet Pairs Initialization
+# 4. High Inlier Ratio on Triplet Pairs Initialization
 
 In order to generate more successfully registered initial poses, more
 triplet correspondences should be inlier triplet correspondences. A
@@ -133,7 +133,7 @@ it drops from 87.3% to 78.2%. This supports our proposal that our
 triangle compatibility could provide good choices on two other point
 pairs to form inlier triplet pairs.
 
-# Ablation Study: CRPS Module. {#crps_module}
+# 5. Ablation Study: CRPS Module. {#crps_module}
 
 As the last step to refine correspondences and select pose, we enforce
 another ablation analysis on our CRPS module. We set weighted SVD
@@ -195,7 +195,7 @@ value should improve its performance. LGR model has been widely used by
 achieved competitive registration score again when added on our module.
 Nevertheless, our CRPS module still outperforms it.
 
-# Limitations
+# 6. Limitations
 
 Despite competitive performance of our registration method, measurement
 of feature matching matrix from first stage of our triplet pairs
