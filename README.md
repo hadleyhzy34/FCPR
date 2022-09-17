@@ -33,8 +33,7 @@ As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iterativel
 
 4.  **Feature Matching Recall** (FMR): it calculates fraction of
     putative pairs whose IR is above a certain threshold
-    ${\tau_2 = 0.05}$. For the second stage of point pairs, a triplet
-    pairs are inliers only if all three point pairs satisfy inliers
+    ${\tau_2 = 0.05}$. For the second stage of point pairs, triplets are inliers only if all three point pairs satisfy inliers
     requirement.
 
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
@@ -44,7 +43,7 @@ As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iterativel
 We implement and evaluate our model with PyTorch [@paszke2019pytorch] on
 hardware: CPU Intel i7-12700 and single GPU Nvidia RTX3090.
 
-For 3DMatch&3DLoMatch benchmarks, at the first stage of triplet pairs
+For 3DMatch&3DLoMatch benchmarks, at the first stage of triplets
 initialization module, we select 10240 number of entries
 ${N_c = 10240}$ as number of candidate pairs and further filter via
 spatial consistency to choose 512 number of pairs ${N_g = 512}$.
@@ -72,14 +71,14 @@ with a voxel size of 2.5 cm on 3DMatch and 30 cm on KITTI. We keep using
 [@qin2022geometric]. Details of configuration and training parameters
 can be found [@qin2022geometric].
 
-## 4. High Inlier Ratio on Triplet Pairs Initialization
+## 4. High Inlier Ratio on Triplets Initialization
 
 In order to generate more successfully registered initial poses, more
 triplet correspondences should be inlier triplet correspondences. A
 triplet correspondences are thought to be inlier triplet correspondences
 when all three point pairs are inlier pairs. Based on this definition,
-we make analysis on triplet pairs initialization module and evaluate
-inlier ratio of triplet pairs. We calculate inlier ratio per scene and
+we make analysis on triplets initialization module and evaluate
+inlier ratio of triplets. We calculate inlier ratio per scene and
 visualize inlier ratio distribution through all scenes. Figure
 [\[fig:triplet inlier\]](#fig:triplet inlier){reference-type="ref"
 reference="fig:triplet inlier"} shows that inlier ratio has
@@ -91,15 +90,14 @@ reference="fig:triplet inlier"}(a) and Figure
 [\[fig:triplet inlier\]](#fig:triplet inlier){reference-type="ref"
 reference="fig:triplet inlier"}(b) is, inlier ratio distributions from
 first stage of point pairs are very similar to the second stage of
-triplet pairs. It means for those of inlier point pairs, they basically
+triplets. It means for those of inlier point pairs, they basically
 \"seize\" the chance to find another two point pairs that are also
 inlier pairs. Numerically, we evaluate difference of *feature matching
-recall* between the first stage point pairs and the second stage triplet
-pairs. For 3DMatch benchmark, it slightly drops from 98.2% on first
+recall* between the first stage point pairs and the second stage triplets. For 3DMatch benchmark, it slightly drops from 98.2% on first
 stage pairs to 97.0% on second stage pairs and for 3DLoMatch benchmark,
 it drops from 87.3% to 78.2%. This supports our proposal that our
 triangle compatibility could provide good choices on two other point
-pairs to form inlier triplet pairs.
+pairs to form inlier triplets.
 
 
 
@@ -110,7 +108,7 @@ pairs to form inlier triplet pairs.
 <div align=center>
 (a) Inlier Ratio on 3DMatch                                           (b) Inlier Ratio on 3DLoMatch
 </div>
-Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplet pairs on both 3DMatch\&3DLoMatch benchmarks. We name inlier ratio of triplet pairs as percentage of triplet pairs that all their three pairs are inlier point pairs.
+Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplets on both 3DMatch\&3DLoMatch benchmarks. We name inlier ratio of triplets as percentage of triplets that all their three pairs are inlier point pairs.
 
 
 
@@ -125,8 +123,7 @@ on Equation
 [\[confidence matrix\]](#confidence matrix){reference-type="ref"
 reference="confidence matrix"}. Then we add LGR [@yu2021cofinet] and
 RANSAC [@fischler1981random] as comparison. RANSAC is evaluated by point
-correspondences ${\textbf{p}_f}$ obtained during first stage of triplet
-pairs initialization and we set iteration for sampling to be 5k.
+correspondences ${\textbf{p}_f}$ obtained during first stage of triplets initialization and we set iteration for sampling to be 5k.
 
 <table class="tg">
 <thead>
@@ -181,13 +178,13 @@ Nevertheless, our CRPS module still outperforms it.
 # 6. Limitations
 
 Despite competitive performance of our registration method, measurement
-of feature matching matrix from first stage of our triplet pairs
+of feature matching matrix from first stage of our triplets
 initialization module might need to be adjusted according to the
 corresponding feature descriptor in order to maximize registration
 performance. Any new feature descriptor may require additional work to
 fine-tune the feature matching matrix to obtain higher inlier-ratio of
 matches with top-k ${k=N_c}$ highest scores from feature matching
-matrix. In the future, we will also work on designing triplet pairs
+matrix. In the future, we will also work on designing triplets
 initialization module that relies less on feature descriptor design.
 
 
