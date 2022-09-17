@@ -194,3 +194,8 @@ initialization module that relies less on feature descriptor design.
 <div id="refer-anchor-1"></div>
 
 - [1] [P. J. Besl and N. D. McKay, "A method for registration of 3-D shapes," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 14, no. 2, pp. 239-256, Feb. 1992, doi: 10.1109/34.121791.](https://ieeexplore.ieee.org/document/121791)
+
+<div id="refer-anchor-2"></div>
+
+- [2] [Chen Y, Medioni G. Object modelling by registration of multiple range images[J]. Image and vision computing, 1992, 10(3): 145-155.](https://www.sciencedirect.com/science/article/abs/pii/026288569290066C)
+
