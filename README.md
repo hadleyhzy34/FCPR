@@ -199,3 +199,17 @@ initialization module that relies less on feature descriptor design.
 
 - [2] [Chen Y, Medioni G. Object modelling by registration of multiple range images[J]. Image and vision computing, 1992, 10(3): 145-155.](https://www.sciencedirect.com/science/article/abs/pii/026288569290066C)
 
+
+- [3] [Trucco E, Fusiello A, Roberto V. Robust motion and correspondence of noisy 3-D point sets with missing data[J]. Pattern recognition letters, 1999, 20(9): 889-898.](https://www.sciencedirect.com/science/article/abs/pii/S0167865599000550)
+
+- [4] []()
+
+- [4] []()
+
+- [4] []()
+
+- [4] []()
+
+
+
+
