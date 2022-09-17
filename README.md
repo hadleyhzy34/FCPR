@@ -200,22 +200,70 @@ initialization module that relies less on feature descriptor design.
 
 - [3] [Trucco E, Fusiello A, Roberto V. Robust motion and correspondence of noisy 3-D point sets with missing data[J]. Pattern recognition letters, 1999, 20(9): 889-898.](https://www.sciencedirect.com/science/article/abs/pii/S0167865599000550)
 
-<div id="refer-anchor-4"></div>
+<div id="refer-anchor-5"></div>
 
-- [4] []()
+- [5] []()
 
-<div id="refer-anchor-4"></div>
+<div id="refer-anchor-6"></div>
 
-- [4] []()
+- [6] []()
 
-<div id="refer-anchor-4"></div>
+<div id="refer-anchor-7"></div>
 
-- [4] []()
+- [7] []()
 
-<div id="refer-anchor-4"></div>
+<div id="refer-anchor-8"></div>
 
-- [4] []()
+- [8] []()
 
+<div id="refer-anchor-9"></div>
 
+- [9] []()
 
+<div id="refer-anchor-10"></div>
 
+- [10] []()
+
+<div id="refer-anchor-11"></div>
+
+- [11] []()
+
+<div id="refer-anchor-12"></div>
+
+- [12] []()
+
+<div id="refer-anchor-13"></div>
+
+- [13] []()
+
+<div id="refer-anchor-14"></div>
+
+- [14] []()
+
+<div id="refer-anchor-15"></div>
+
+- [15] []()
+
+<div id="refer-anchor-16"></div>
+
+- [16] []()
+
+<div id="refer-anchor-17"></div>
+
+- [17] []()
+
+<div id="refer-anchor-18"></div>
+
+- [18] []()
+
+<div id="refer-anchor-19"></div>
+
+- [19] []()
+
+<div id="refer-anchor-20"></div>
+
+- [20] []()
+
+<div id="refer-anchor-21"></div>
+
+- [21] []()
