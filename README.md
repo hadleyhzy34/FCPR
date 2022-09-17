@@ -40,7 +40,7 @@ As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iterativel
 
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
 
-## 3. Implementation Details {#Implementation Details}
+## 3. Implementation Details
 
 We implement and evaluate our model with PyTorch [@paszke2019pytorch] on
 hardware: CPU Intel i7-12700 and single GPU Nvidia RTX3090.
@@ -117,7 +117,7 @@ Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of t
 
 
 
-## 5. Ablation Study: CRPS Module. {#crps_module}
+## 5. Ablation Study: CRPS Module
 
 As the last step to refine correspondences and select pose, we enforce
 another ablation analysis on our CRPS module. We set weighted SVD
