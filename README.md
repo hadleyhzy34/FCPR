@@ -200,9 +200,14 @@ initialization module that relies less on feature descriptor design.
 
 - [3] [Trucco E, Fusiello A, Roberto V. Robust motion and correspondence of noisy 3-D point sets with missing data[J]. Pattern recognition letters, 1999, 20(9): 889-898.](https://www.sciencedirect.com/science/article/abs/pii/S0167865599000550)
 
+<div id="refer-anchor-4"></div>
+
+- [4] [Dmitry Chetverikov, Dmitry Stepanov, Pavel Krsek, Robust Euclidean alignment of 3D point sets: the trimmed iterative closest point algorithm, Image and Vision Computing, Volume 23, Issue 3,
+2005, Pages 299-309,](https://www.sciencedirect.com/science/article/abs/pii/S0262885604001179)
+
 <div id="refer-anchor-5"></div>
 
-- [5] []()
+- [5] [J. Yang, H. Li, D. Campbell and Y. Jia, "Go-ICP: A Globally Optimal Solution to 3D ICP Point-Set Registration," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 38, no. 11, pp. 2241-2254, 1 Nov. 2016, doi: 10.1109/TPAMI.2015.2513405.](https://ieeexplore.ieee.org/document/7368945)
 
 <div id="refer-anchor-6"></div>
 
