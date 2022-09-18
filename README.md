@@ -223,23 +223,24 @@ initialization module that relies less on feature descriptor design.
 
 <div id="refer-anchor-9"></div>
 
-- [9] []()
+- [9] [O. Chum and J. Matas, "Matching with PROSAC - progressive sample consensus," 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05), 2005, pp. 220-226 vol. 1, doi: 10.1109/CVPR.2005.221.](https://ieeexplore.ieee.org/document/1467271)
 
 <div id="refer-anchor-10"></div>
 
-- [10] []()
+- [10] [Kai Ni, Hailin Jin and F. Dellaert, "GroupSAC: Efficient consensus in the presence of groupings," 2009 IEEE 12th International Conference on Computer Vision, 2009, pp. 2193-2200, doi: 10.1109/ICCV.2009.5459241.](https://ieeexplore.ieee.org/document/5459241)
 
 <div id="refer-anchor-11"></div>
 
-- [11] []()
+- [11] [D. Barath and J. Matas, “Graph-cut ransac,” in 2018 IEEE/CVF
+Conference on Computer Vision and Pattern Recognition, 2018.](https://arxiv.org/abs/1706.00984)
 
 <div id="refer-anchor-12"></div>
 
-- [12] []()
+- [12] [Q.-Y. Zhou, J. Park, and V. Koltun, “Fast global registration,” in European conference on computer vision. Springer, 2016, pp. 766–782.](http://vladlen.info/papers/fast-global-registration.pdf)
 
 <div id="refer-anchor-13"></div>
 
-- [13] []()
+- [13] [H. Yang, J. Shi, and L. Carlone, “Teaser: Fast and certifiable point cloud registration,” IEEE Transactions on Robotics, vol. 37, no. 2, pp. 314–333, 2020.](https://arxiv.org/abs/2001.07715)
 
 <div id="refer-anchor-14"></div>
 
