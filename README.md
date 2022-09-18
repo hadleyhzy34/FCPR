@@ -211,15 +211,15 @@ initialization module that relies less on feature descriptor design.
 
 <div id="refer-anchor-6"></div>
 
-- [6] []()
+- [6] [K. Koide, M. Yokozuka, S. Oishi and A. Banno, "Voxelized GICP for Fast and Accurate 3D Point Cloud Registration," 2021 IEEE International Conference on Robotics and Automation (ICRA), 2021, pp. 11054-11059, doi: 10.1109/ICRA48506.2021.9560835.](https://ieeexplore.ieee.org/document/9560835)
 
 <div id="refer-anchor-7"></div>
 
-- [7] []()
+- [7] [P. Biber and W. Strasser, "The normal distributions transform: a new approach to laser scan matching," Proceedings 2003 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2003) (Cat. No.03CH37453), 2003, pp. 2743-2748 vol.3, doi: 10.1109/IROS.2003.1249285.](https://ieeexplore.ieee.org/document/1249285)
 
 <div id="refer-anchor-8"></div>
 
-- [8] []()
+- [8] [Fischler, Martin A. and Robert C. Bolles. “Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography.” Commun. ACM 24 (1981): 381-395.](https://dl.acm.org/doi/10.1145/358669.358692)
 
 <div id="refer-anchor-9"></div>
 
