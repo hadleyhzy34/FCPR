@@ -143,19 +143,11 @@ As the last step to refine correspondences and select pose, we enforce another a
 </tbody>
 </table>
 
-As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref" reference="tab:ablation_estimator_exp"}, our default method with CRPS module achieves highest registration result compared with other approaches. Since not all initial point pairs ${p_f}$ are inlier point pairs, non-inliers would aggregate and form group of points that are not contributing to our final pose estimation. This explains why using SVD weighted by corresponding pairs from all groups could not generate highly-successful registration. RANSAC based approach does not return accurate pose compared with LGR and our CRPS module partially due to insufficient number of corresponding pairs to sample and increasing this value should improve its performance. LGR model has been widely used by [[17]](#refer-anchor-17),[[19]-[21]](#refer-anchor-19)(#refer-anchor-20)(#refer-anchor-21) and achieved competitive registration score again when added on our module. Nevertheless, our CRPS module still outperforms it.
+As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref" reference="tab:ablation_estimator_exp"}, our default method with CRPS module achieves highest registration result compared with other approaches. Since not all initial point pairs ${p_f}$ are inlier point pairs, non-inliers would aggregate and form group of points that are not contributing to our final pose estimation. This explains why using SVD weighted by corresponding pairs from all groups could not generate highly-successful registration. RANSAC based approach does not return accurate pose compared with LGR and our CRPS module partially due to insufficient number of corresponding pairs to sample and increasing this value should improve its performance. LGR model has been widely used by [[17]](#refer-anchor-17), [[19]-[21]](#refer-anchor-19)(#refer-anchor-20)(#refer-anchor-21) and achieved competitive registration score again when added on our module. Nevertheless, our CRPS module still outperforms it.
 
 # 6. Limitations
 
-Despite competitive performance of our registration method, measurement
-of feature matching matrix from first stage of our triplets
-initialization module might need to be adjusted according to the
-corresponding feature descriptor in order to maximize registration
-performance. Any new feature descriptor may require additional work to
-fine-tune the feature matching matrix to obtain higher inlier-ratio of
-matches with top-k ${k=N_c}$ highest scores from feature matching
-matrix. In the future, we will also work on designing triplets
-initialization module that relies less on feature descriptor design.
+Despite competitive performance of our registration method, measurement of feature matching matrix from first stage of our triplets initialization module might need to be adjusted according to the corresponding feature descriptor in order to maximize registration performance. Any new feature descriptor may require additional work to fine-tune the feature matching matrix to obtain higher inlier-ratio of matches with top-k ${k=N_c}$ highest scores from feature matching matrix. In the future, we will also work on designing triplets initialization module that relies less on feature descriptor design.
 
 
 <div id="refer-anchor-1"></div>
