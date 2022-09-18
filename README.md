@@ -244,32 +244,32 @@ Conference on Computer Vision and Pattern Recognition, 2018.](https://arxiv.org/
 
 <div id="refer-anchor-14"></div>
 
-- [14] []()
+- [14] [J. Yang, K. Xian, P. Wang, and Y. Zhang, “A performance evaluation of correspondence grouping methods for 3d rigid data matching,” IEEE transactions on pattern analysis and machine intelligence, vol. 43, no. 6, pp. 1859–1874, 2019.](https://arxiv.org/abs/1907.02890)
 
 <div id="refer-anchor-15"></div>
 
-- [15] []()
+- [15] [A. Paszke, S. Gross, F. Massa, A. Lerer, J. Bradbury, G. Chanan, T. Killeen, Z. Lin, N. Gimelshein, L. Antiga, et al., “Pytorch: An imperative style, high-performance deep learning library,” Advances in neural information processing systems, vol. 32, 2019.](https://arxiv.org/abs/1912.01703)
 
 <div id="refer-anchor-16"></div>
 
-- [16] []()
+- [16] [S. Huang, Z. Gojcic, M. Usvyatsov, A. Wieser, and K. Schindler, “Predator: Registration of 3d point clouds with low overlap,” in Proceedings of the IEEE/CVF Conference on computer vision and pattern recognition, 2021, pp. 4267–4276.](https://arxiv.org/abs/2011.13005)
 
 <div id="refer-anchor-17"></div>
 
-- [17] []()
+- [17] [ Z. Qin, H. Yu, C. Wang, Y. Guo, Y. Peng, and K. Xu, “Geometric transformer for fast and robust point cloud registration,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022, pp. 11 143–11 152.]()
 
 <div id="refer-anchor-18"></div>
 
-- [18] []()
+- [18] [S. Umeyama, “Least-squares estimation of transformation parameters between two point patterns,” IEEE Transactions on Pattern Analysis & Machine Intelligence, vol. 13, no. 04, pp. 376–380, 1991.](https://ieeexplore.ieee.org/document/88573)
 
 <div id="refer-anchor-19"></div>
 
-- [19] []()
+- [19] [H. Yu, F. Li, M. Saleh, B. Busam, and S. Ilic, “Cofinet: Reliable coarse-to-fine correspondences for robust pointcloud registration,” Advances in Neural Information Processing Systems, vol. 34, pp. 23 872–23 884, 2021.](https://arxiv.org/abs/2110.14076)
 
 <div id="refer-anchor-20"></div>
 
-- [20] []()
+- [20] [X. Bai, Z. Luo, L. Zhou, H. Chen, L. Li, Z. Hu, H. Fu, and C.-L. Tai, “Pointdsc: Robust point cloud registration using deep spatial consistency,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2021, pp. 15 859–15 869.](https://arxiv.org/abs/2103.05465)
 
 <div id="refer-anchor-21"></div>
 
-- [21] []()
+- [21] [Z. Chen, K. Sun, F. Yang, and W. Tao, “Sc2-pcr: A second order spatial compatibility for efficient and robust point cloud registration,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022, pp. 13 221–13 231](https://arxiv.org/abs/2203.14453)
