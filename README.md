@@ -5,7 +5,7 @@
 ## 1. Related Work
  
 ### 1.1. Traditional Registration Methods
-As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iteratively updates transformation estimation by minimizing ${l_2}$ distance between registered source points given current estimation and the reference points. Variants of ICP algorithm [[2]-[6]](#refer-anchor-2)(#refer-anchor-3)(#refer-anchor-4)(#refer-anchor-5)(#refer-anchor-6) have been proposed to resist effect of outliers and speed up convergence. NDT [<sup>7</sup>](#refer-anchor-7) utilizes Netwon's algorithm to maximize registered points' summed probability on source points' probability density. RANSAC [<sup>8</sup>](#refer-anchor-8) follows a "generation and verification" scheme, where candidate correspondences are sampled and after a certain iterations, an alignment is produced based on maximum number of consensus. Many of its variants [<sup>9</sup>](#refer-anchor-9)[<sup>10</sup>](#refer-anchor-10)[<sup>11</sup>](#refer-anchor-11) accelerate the process and improve its robustness. FGR [<sup>12</sup>](#refer-anchor-12) and Teaser [<sup>13</sup>](#refer-anchor-13) manage to register points by solving global optimization problem using Geman-McClure algorithm and truncated least square algorithm respectively while at higher computation cost. A more detailed review on traditional optimization based methods can be found in [<sup>14</sup>](#refer-anchor-14).
+As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates transformation estimation by minimizing ${l_2}$ distance between registered source points given current estimation and the reference points. Variants of ICP algorithm [[2]-[6]](#refer-anchor-2)(#refer-anchor-3)(#refer-anchor-4)(#refer-anchor-5)(#refer-anchor-6) have been proposed to resist effect of outliers and speed up convergence. NDT [[7]](#refer-anchor-7) utilizes Netwon's algorithm to maximize registered points' summed probability on source points' probability density. RANSAC [[8]](#refer-anchor-8) follows a "generation and verification" scheme, where candidate correspondences are sampled and after a certain iterations, an alignment is produced based on maximum number of consensus. Many of its variants [[9]-[11]](#refer-anchor-9)(#refer-anchor-10)(#refer-anchor-11) accelerate the process and improve its robustness. FGR [[12]](#refer-anchor-12) and Teaser [[13]](#refer-anchor-13) manage to register points by solving global optimization problem using Geman-McClure algorithm and truncated least square algorithm respectively while at higher computation cost. A more detailed review on traditional optimization based methods can be found in [[14]](#refer-anchor-14).
 
 
 ## 2. Evaluation Metrics
@@ -40,7 +40,7 @@ As classical registration method, ICP [<sup>1</sup>](#refer-anchor-1) iterativel
 
 ## 3. Implementation Details
 
-We implement and evaluate our model with PyTorch [@paszke2019pytorch] on
+We implement and evaluate our model with PyTorch [[15]](#refer-anchor-15) on
 hardware: CPU Intel i7-12700 and single GPU Nvidia RTX3090.
 
 For 3DMatch&3DLoMatch benchmarks, at the first stage of triplets
@@ -55,21 +55,11 @@ threshold ${\sigma_d}$ and inlier threshold ${\tau_s}$ are set to 0.1m.
 NMS distance threshold is set to 5cm and length threshold ${\sigma_l}$
 is set to 0.05m.
 
-For KITTI odometry benchmarks, since number of points for each frame is
-much larger and each frame covers a larger area, we increase both
-triangle inlier threshold ${\sigma_d}$ and inlier threshold ${\tau_s}$
-to 0.6m. Length threshold ${\sigma_l}$ is also set to 0.6m. NMS distance
-threshold is set to 1.2m. 24 nearest neighbor points are visited. The
-rest parameter settings are the same as settings in 3DMatch&3DLoMatch
-benchmarks.
+For KITTI odometry benchmarks, since number of points for each frame is much larger and each frame covers a larger area, we increase both
+triangle inlier threshold ${\sigma_d}$ and inlier threshold ${\tau_s}$ to 0.6m. Length threshold ${\sigma_l}$ is also set to 0.6m. NMS distance threshold is set to 1.2m. 24 nearest neighbor points are visited. The rest parameter settings are the same as settings in 3DMatch&3DLoMatch benchmarks.
 
 We use a KPConv-FPN backbone extracted from GeoTransformer as our
-backbone for feature extraction. We follow
-[@huang2021predator; @qin2022geometric] to downsample the point clouds
-with a voxel size of 2.5 cm on 3DMatch and 30 cm on KITTI. We keep using
-4 stages KPConv-FPN layers and 5 stages KPConv-FPN layers as in
-[@qin2022geometric]. Details of configuration and training parameters
-can be found [@qin2022geometric].
+backbone for feature extraction. We follow [[16]-[17]](#refer-anchor-16)(#refer-anchor-17) to downsample the point clouds with a voxel size of 2.5 cm on 3DMatch and 30 cm on KITTI. We keep using 4 stages KPConv-FPN layers and 5 stages KPConv-FPN layers as in [[17]](#refer-anchor-17). Details of configuration and training parameters can be found [[17]](#refer-anchor-17).
 
 ## 4. High Inlier Ratio on Triplets Initialization
 
@@ -116,14 +106,7 @@ Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of t
 
 ## 5. Ablation Study: CRPS Module
 
-As the last step to refine correspondences and select pose, we enforce
-another ablation analysis on our CRPS module. We set weighted SVD
-[@umeyama1991least] as our baseline method. Weights are assigned based
-on Equation
-[\[confidence matrix\]](#confidence matrix){reference-type="ref"
-reference="confidence matrix"}. Then we add LGR [@yu2021cofinet] and
-RANSAC [@fischler1981random] as comparison. RANSAC is evaluated by point
-correspondences ${\textbf{p}_f}$ obtained during first stage of triplets initialization and we set iteration for sampling to be 5k.
+As the last step to refine correspondences and select pose, we enforce another ablation analysis on our CRPS module. We set weighted SVD [[18]](#refer-anchor-18) as our baseline method. Weights are assigned based on Equation [\[confidence matrix\]](#confidence matrix){reference-type="ref" reference="confidence matrix"}. Then we add LGR [[19]](#refer-anchor-19) and RANSAC [[8]](#refer-anchor-8) as comparison. RANSAC is evaluated by point correspondences ${\textbf{p}_f}$ obtained during first stage of triplets initialization and we set iteration for sampling to be 5k.
 
 <table class="tg">
 <thead>
@@ -160,20 +143,7 @@ correspondences ${\textbf{p}_f}$ obtained during first stage of triplets initial
 </tbody>
 </table>
 
-As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref"
-reference="tab:ablation_estimator_exp"}, our default method with CRPS
-module achieves highest registration result compared with other
-approaches. Since not all initial point pairs ${p_f}$ are inlier point
-pairs, non-inliers would aggregate and form group of points that are not
-contributing to our final pose estimation. This explains why using SVD
-weighted by corresponding pairs from all groups could not generate
-highly-successful registration. RANSAC based approach does not return
-accurate pose compared with LGR and our CRPS module partially due to
-insufficient number of corresponding pairs to sample and increasing this
-value should improve its performance. LGR model has been widely used by
-[@yu2021cofinet; @bai2021pointdsc; @qin2022geometric; @chen2022sc2] and
-achieved competitive registration score again when added on our module.
-Nevertheless, our CRPS module still outperforms it.
+As shown in Table [1](#tab:ablation_estimator_exp){reference-type="ref" reference="tab:ablation_estimator_exp"}, our default method with CRPS module achieves highest registration result compared with other approaches. Since not all initial point pairs ${p_f}$ are inlier point pairs, non-inliers would aggregate and form group of points that are not contributing to our final pose estimation. This explains why using SVD weighted by corresponding pairs from all groups could not generate highly-successful registration. RANSAC based approach does not return accurate pose compared with LGR and our CRPS module partially due to insufficient number of corresponding pairs to sample and increasing this value should improve its performance. LGR model has been widely used by [[17]](#refer-anchor-17),[[19]-[21]](#refer-anchor-19)(#refer-anchor-20)(#refer-anchor-21) and achieved competitive registration score again when added on our module. Nevertheless, our CRPS module still outperforms it.
 
 # 6. Limitations
 
