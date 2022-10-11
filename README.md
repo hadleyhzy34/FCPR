@@ -94,7 +94,7 @@ pairs to form inlier triplets.
 <img src="https://github.com/hadleyhzy34/FCPR/blob/main/assets/3dm_ir.png" width="360" height="245">   <img src="https://github.com/hadleyhzy34/FCPR/blob/main/assets/3dlm_ir.png" width="360" height="245">
 </div>
 <div align=center>
-(a) Inlier Ratio on 3DMatch                                           (b) Inlier Ratio on 3DLoMatch
+(a) Inlier Ratio on 3DMatch          (b) Inlier Ratio on 3DLoMatch
 </div>
 Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplets on both 3DMatch&3DLoMatch benchmarks. We name inlier ratio of triplets as percentage of triplets that all their three pairs are inlier point pairs.
 
@@ -147,6 +147,7 @@ As the last step to refine correspondences and select pose, we enforce another a
 <div align='center'>
 <caption>Table 1: Evaluation Results of ablation study on Pose Estimation Strategy.</caption>
 </div>
+<br/><br/>
 
 As shown in Table 1, our default method with CRPS module achieves highest registration result compared with other approaches. Since not all initial point pairs ${p_f}$ are inlier point pairs, non-inliers would aggregate and form group of points that are not contributing to our final pose estimation. This explains why using SVD weighted by corresponding pairs from all groups could not generate highly-successful registration. RANSAC based approach does not return accurate pose compared with LGR and our CRPS module partially due to insufficient number of corresponding pairs to sample and increasing this value should improve its performance. LGR model has been widely used by [[17]](#refer-anchor-17), [[19]-[21]](#refer-anchor-19) and achieved competitive registration score again when added on our module. Nevertheless, our CRPS module still outperforms it.
 
