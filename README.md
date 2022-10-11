@@ -30,6 +30,7 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     ${\tau_{1}}$, which is set to 0.1m for 3DMatch&3DLoMatch benchmarks.
 
     $$IR = \frac{1}{|\mathcal{C}|}{\sum_{(p_i^{s},p_i^{r})\in\mathcal{C}}{{\llbracket} || \textbf{R} \textbf{p}_{i}^{s} + \textbf{t} - \textbf{P}_{i}^{r}||<\tau_{1} {\rrbracket}}}$$
+    $$IR = \frac{1}{|\mathcal{C}|}{\sum_{(p_i^{s},p_i^{r})\in\mathcal{C}}{{{[\![ || \textbf{R} \textbf{p}_{i}^{s} + \textbf{t} - \textbf{P}_{i}^{r}||<\tau_{1} ]\!]}}}}$$
 
 4.  **Feature Matching Recall** (FMR): it calculates fraction of
     putative pairs whose IR is above a certain threshold
@@ -37,10 +38,6 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     requirement.
 
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
-
-5.  this is test:
-    
-    $$IR = \frac{1}{|\mathcal{C}|}{\sum_{(p_i^{s},p_i^{r})\in\mathcal{C}}{{\left[} || \textbf{R} \textbf{p}_{i}^{s} + \textbf{t} - \textbf{P}_{i}^{r}||<\tau_{1} {\right]}}}$$
 
 ## 3. Implementation Details
 
