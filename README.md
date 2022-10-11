@@ -94,7 +94,7 @@ pairs to form inlier triplets.
 <img src="https://github.com/hadleyhzy34/FCPR/blob/main/assets/3dm_ir.png" width="360" height="245">   <img src="https://github.com/hadleyhzy34/FCPR/blob/main/assets/3dlm_ir.png" width="360" height="245">
 </div>
 <div align=center>
-(a) Inlier Ratio on 3DMatch  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (b) Inlier Ratio on 3DLoMatch
+(a) Inlier Ratio on 3DMatch  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (b) Inlier Ratio on 3DLoMatch
 </div>
 
 Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of triplets on both 3DMatch&3DLoMatch benchmarks. We name inlier ratio of triplets as percentage of triplets that all their three pairs are inlier point pairs.
