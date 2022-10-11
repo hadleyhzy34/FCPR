@@ -142,6 +142,12 @@ As the last step to refine correspondences and select pose, we enforce another a
 <caption>Table 1: Evaluation Results of ablation study on Pose Estimation Strategy.</caption>
 </table>
 
+table
+{ 
+margin-left: auto;
+margin-right: auto;
+}
+
 As shown in Table 1, our default method with CRPS module achieves highest registration result compared with other approaches. Since not all initial point pairs ${p_f}$ are inlier point pairs, non-inliers would aggregate and form group of points that are not contributing to our final pose estimation. This explains why using SVD weighted by corresponding pairs from all groups could not generate highly-successful registration. RANSAC based approach does not return accurate pose compared with LGR and our CRPS module partially due to insufficient number of corresponding pairs to sample and increasing this value should improve its performance. LGR model has been widely used by [[17]](#refer-anchor-17), [[19]-[21]](#refer-anchor-19) and achieved competitive registration score again when added on our module. Nevertheless, our CRPS module still outperforms it.
 
 # 6. Limitations
