@@ -37,9 +37,21 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     ${\tau_2 = 0.05}$. For the second stage of point pairs, triplets are inliers only if all three point pairs satisfy inliers
     requirement.
 
+    <div align=center>
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="270">
+    </div>
+
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
 
-5.  thsi is test
+    <div align=center>
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="270">
+    </div>
+
+5.  this is test
+
+    <div align=center>
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="270">
+    </div>
 
     $$IR = \frac{1}{|\mathcal{C}|}{\sum_{(p_i^{s},p_i^{r})\in\mathcal{C}}{{{[\![ || \textbf{R} \textbf{p}_{i}^{s} + \textbf{t} - \textbf{P}_{i}^{r}||<\tau_{1} ]\!]}}}}$$
 
