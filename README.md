@@ -92,6 +92,7 @@ pairs to form inlier triplets.
 
 <div align=center>
 <img src="https://github.com/hadleyhzy34/FCPR/blob/main/assets/3dm_ir.png" width="360" height="245">   <img src="https://github.com/hadleyhzy34/FCPR/blob/main/assets/3dlm_ir.png" width="360" height="245">
+</div>
 
 <!-- <div align=center> -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
