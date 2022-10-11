@@ -142,6 +142,8 @@ As the last step to refine correspondences and select pose, we enforce another a
 </tbody>
 <!-- <caption>Table 1: Evaluation Results of ablation study on Pose Estimation Strategy.</caption> -->
 </table>
+</div>
+
 <div align='center'>
 <caption>Table 1: Evaluation Results of ablation study on Pose Estimation Strategy.</caption>
 </div>
