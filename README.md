@@ -40,6 +40,7 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
 
 5.  thsi is test
+
     $$IR = \frac{1}{|\mathcal{C}|}{\sum_{(p_i^{s},p_i^{r})\in\mathcal{C}}{{{[\![ || \textbf{R} \textbf{p}_{i}^{s} + \textbf{t} - \textbf{P}_{i}^{r}||<\tau_{1} ]\!]}}}}$$
 
 ## 3. Implementation Details
