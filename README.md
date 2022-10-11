@@ -106,7 +106,7 @@ Figure 1： Comparison between inlier ratio of first pairs and inlier ratio of t
 
 As the last step to refine correspondences and select pose, we enforce another ablation analysis on our CRPS module. We set weighted SVD [[18]](#refer-anchor-18) as our baseline method. Weights are assigned based on Equation 4. Then we add LGR [[19]](#refer-anchor-19) and RANSAC [[8]](#refer-anchor-8) as comparison. RANSAC is evaluated by point correspondences ${\textbf{p}_f}$ obtained during first stage of triplets initialization and we set iteration for sampling to be 5k.
 
-<table class="tg">
+<table class="tg",style="border:1px solid black;margin-left:auto;margin-right:auto;">
 <caption>Table 1: Evaluation Results of ablation study on Pose Estimation Strategy.</caption>
 <thead>
   <tr>
