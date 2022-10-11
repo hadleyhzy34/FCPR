@@ -73,9 +73,7 @@ triplet correspondences are thought to be inlier triplet correspondences
 when all three point pairs are inlier pairs. Based on this definition,
 we make analysis on triplets initialization module and evaluate
 inlier ratio of triplets. We calculate inlier ratio per scene and
-visualize inlier ratio distribution through all scenes. Figure
-[\[fig:triplet inlier\]](#fig:triplet inlier){reference-type="ref"
-reference="fig:triplet inlier"} shows that inlier ratio has
+visualize inlier ratio distribution through all scenes. Figure 1 shows that inlier ratio has
 significantly declined from 3DMatch datasets to 3DLoMatch datasets since
 it is much harder to output inlier points on 3DLoMatch scenes. More
 noticeable thing from both Figure
