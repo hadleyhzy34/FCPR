@@ -30,7 +30,7 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     ${\tau_{1}}$, which is set to 0.1m for 3DMatch&3DLoMatch benchmarks.
 
     <div align=center>
-    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="240" height="45">
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="300" height="56">
     </div>
 
 4.  **Feature Matching Recall** (FMR): it calculates fraction of
@@ -39,7 +39,7 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     requirement.
 
     <div align=center>
-    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_17.png" width="240" height="70">
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_17.png" width="200" height="58">
     </div>
 
 ## 3. Implementation Details
