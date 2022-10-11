@@ -38,13 +38,13 @@ As classical registration method, ICP [[1]](#refer-anchor-1) iteratively updates
     requirement.
 
     <div align=center>
-    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="270">
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="67">
     </div>
 
     $$FMR = \frac{1}{M}\sum_{i=1}^{M}{{\llbracket} IR_i > \tau_2 {\rrbracket}}$$
 
     <div align=center>
-    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="270">
+    <img src="https://github.com/hadleyhzy34/FCPR/blob/main/equation_16.png" width="360" height="67">
     </div>
 
 5.  this is test
