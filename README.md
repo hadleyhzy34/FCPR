@@ -1,5 +1,43 @@
 # FCPR: Flood Fill Correspondences for Robust Point Cloud Registration
 
+This repository represent official implementation of paper:
+
+Flood Fill Correspondences for Robust Point Cloud Registration
+
+If you have any questions, please let us know:
+
+Ziyue(Hadley) Hou {Hadley_hzy@outlook.com}
+
+# Instructions
+
+This code has been tested on
+
+```
+Python 3.9.0, PyTorch 1.12.1, CUDA 11.6, GeForce RTX 3090
+```
+
+## Requirements
+
+```
+# activate conda env
+conda create -n fcpr -f environment.yml python==3.9
+conda activate fcpr
+
+# install torch
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+
+# pytorch3d
+pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
+
+# install
+python setup.py build develop
+```
+
+## Datasets and pretrained models
+
+## Evaluation
+
+
 # APPENDIX
 
 ## 1. Related Work
