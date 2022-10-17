@@ -50,7 +50,20 @@ GeoTransformer based descriptor pre-trained weights can be found from GeoTransfo
 ### 3DMatch
 
 Dataset can be downloaded from [Predator](https://github.com/prs-eth/OverlapPredator) and data should be organized as follows:
-
+```
+.
+└── 3DMatch
+    ├── data
+    │   ├── test
+    │   └── train
+    └── metadata
+        ├── 3DLoMatch.pkl
+        ├── 3DMatch.pkl
+        ├── benchmarks
+        ├── split
+        ├── train.pkl
+        └── val.pkl
+```
 
 
 ## Evaluation
