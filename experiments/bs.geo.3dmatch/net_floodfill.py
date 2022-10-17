@@ -24,16 +24,7 @@ import open3d as o3d
 from fcpr.modules.ops import apply_transform
 from fcpr.modules.registration import WeightedProcrustes, test_weighted_procrustes
 from fcpr.modules.registration.metrics import isotropic_transform_error
-# from geotransformer.utils.open3d import registration_with_ransac_from_correspondences
-# from geotransformer.modules.ops import point_to_node_partition, index_select
-# from geotransformer.modules.registration import get_node_correspondences
-# from geotransformer.modules.sinkhorn import LearnableLogOptimalTransport
-# from geotransformer.modules.geotransformer import (
-#     GeometricTransformer,
-#     SuperPointMatching,
-#     SuperPointTargetGenerator,
-#     LocalGlobalRegistration,
-# )
+
 from sklearn.manifold import TSNE
 from matplotlib import pyplot as plt
 # from misc.fcgf import ResUNetBN2C as FCGF

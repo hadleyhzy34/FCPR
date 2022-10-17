@@ -1,6 +1,6 @@
 # FCPR: Flood Fill Correspondences for Robust Point Cloud Registration
 
-This repository represent official implementation of paper:
+This repository represents official implementation of paper:
 
 Flood Fill Correspondences for Robust Point Cloud Registration
 
@@ -20,7 +20,7 @@ Python 3.9.0, PyTorch 1.12.1, CUDA 11.6, GeForce RTX 3090
 
 ```
 # activate conda env
-conda create -n fcpr -f environment.yml python==3.9
+conda create -n fcpr python==3.9
 conda activate fcpr
 
 # install torch
@@ -33,9 +33,38 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 python setup.py build develop
 ```
 
-## Datasets and pretrained models
+Other packages need to be installed:
+* open3d
+* matplotlib
+* seaborn
+* tqdm
+* ipdb
+* scipy
+
+## Descriptor Pretrained Models
+
+GeoTransformer based descriptor pre-trained weights can be found from GeoTransformer ![project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
+
+## Datasets
+
+### 3DMatch
+
+Dataset can be downloaded from ![Predator](https://github.com/prs-eth/OverlapPredator) and data should be organized as follows:
+
+
 
 ## Evaluation
+
+### 3DMatch
+
+```
+python test.py --snapshot=../../weights/geotransformer-3dmatch.pth.tar --benchmark=3DMatch
+```
+
+### 3DLoMatch
+```
+python test.py --snapshot=../../weights/geotransformer-3dmatch.pth.tar --benchmark=3dlomatch
+```
 
 
 # APPENDIX
