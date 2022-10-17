@@ -43,13 +43,13 @@ Other packages need to be installed:
 
 ## Descriptor Pretrained Models
 
-GeoTransformer based descriptor pre-trained weights can be found from GeoTransformer ![project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
+GeoTransformer based descriptor pre-trained weights can be found from GeoTransformer [project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
 
 ## Datasets
 
 ### 3DMatch
 
-Dataset can be downloaded from ![Predator](https://github.com/prs-eth/OverlapPredator) and data should be organized as follows:
+Dataset can be downloaded from [Predator](https://github.com/prs-eth/OverlapPredator) and data should be organized as follows:
 
 
 
