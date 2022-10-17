@@ -79,6 +79,9 @@ python test.py --snapshot=../../weights/geotransformer-3dmatch.pth.tar --benchma
 python test.py --snapshot=../../weights/geotransformer-3dmatch.pth.tar --benchmark=3dlomatch
 ```
 
+## Acknowledgments
+
+* [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
 
 # APPENDIX
 
