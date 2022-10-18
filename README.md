@@ -6,7 +6,7 @@ Flood Fill Correspondences for Robust Point Cloud Registration
 
 If you have any questions, please let us know:
 
-Ziyue(Hadley) Hou {Hadley_hzy@outlook.com}
+[Ziyue(Hadley) Hou](https://github.com/hadleyhzy34) {Hadley_hzy@outlook.com}
 
 # Instructions
 
@@ -43,7 +43,7 @@ Other packages need to be installed:
 
 ## Descriptor Pretrained Models
 
-GeoTransformer based descriptor pre-trained weights can be found from GeoTransformer [project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
+[GeoTransformer](https://arxiv.org/abs/2202.06688) based descriptor pre-trained weights can be found from GeoTransformer [project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
 
 ## Datasets
 
