@@ -41,6 +41,9 @@ Other packages need to be installed:
 * ipdb
 * scipy
 * coloredlogs
+* easydict
+* einops
+* tensorboardX
 
 ## Descriptor Pretrained Models
 
