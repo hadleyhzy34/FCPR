@@ -40,6 +40,7 @@ Other packages need to be installed:
 * tqdm
 * ipdb
 * scipy
+* coloredlogs
 
 ## Descriptor Pretrained Models
 
