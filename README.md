@@ -43,7 +43,7 @@ Other packages need to be installed:
 
 ## Descriptor Pretrained Models
 
-[GeoTransformer](https://arxiv.org/abs/2202.06688) based descriptor pre-trained weights can be found from GeoTransformer [project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
+create a folder named weights and put pre-trained weights inside this folder. [GeoTransformer](https://arxiv.org/abs/2202.06688) based descriptor pre-trained weights can be found from GeoTransformer [project](https://github.com/qinzheng93/GeoTransformer#pre-trained-weights) page.
 
 ## Datasets
 
@@ -67,6 +67,8 @@ Dataset can be downloaded from [Predator](https://github.com/prs-eth/OverlapPred
 
 
 ## Evaluation
+
+navigate to folder `experiments/bs.geo.3dmatch/.` and execute the following command.
 
 ### 3DMatch
 
