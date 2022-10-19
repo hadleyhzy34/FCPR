@@ -46,7 +46,7 @@ class Floodfill(nn.Module):
         self.num_adj = 9
         # beam search hyper parameters
         # self.iter_search = 8
-        self.bw = 64
+        self.bw = 512
         self.length = 0
         self.radius = 0.1
         self.nps = 1

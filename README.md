@@ -26,7 +26,7 @@ conda activate fcpr
 # install torch
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 
-# pytorch3d
+# pytorch3d, if you get error like `not compiled with GPU support` during test, then try to install it from a local clone
 pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 
 # install
